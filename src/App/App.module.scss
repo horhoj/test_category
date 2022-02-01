@@ -1,4 +1,22 @@
 .wrap {
-  margin: 100px auto 0;
+  margin: 0 auto;
+  padding: 10px;
   max-width: 1024px;
+  min-height: 100vh;
+  //background-color: red;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
+
+.navList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+  & a {
+    text-decoration: none;
+    color: darkslategray;
+  }
+}
+
