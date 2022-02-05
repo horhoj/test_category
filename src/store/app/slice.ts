@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AppState } from './types';
 
 const initialState: AppState = {
@@ -8,5 +8,9 @@ const initialState: AppState = {
 export const appSlice = createSlice({
   name: 'app',
   initialState,
-  reducers: {},
+  reducers: {
+    setTest: (state, action: PayloadAction<string>) => {
+      state.test = action.payload;
+    },
+  },
 });
